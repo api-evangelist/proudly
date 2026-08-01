@@ -1,8 +1,12 @@
 aid: proudly
 name: Proudly
-description: 'Proudly is a company surfaced as a portfolio company of initialized-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Proudly is a direct-to-consumer baby care brand, co-founded by Dwyane Wade and Gabrielle
+  Union, that centers the unique skin and hair needs of Black and Brown babies to make products better
+  for all. Its Shopify-hosted storefront sells skincare (balms, washes, oils), hair care, baby wipes,
+  absorbent diapers, bath and body kits, apparel and gift bundles under a "No Sketchy Stuff" ingredient-transparency
+  commitment. Backed by Initialized Capital (via A-Frame Brands), Atacama Ventures and VMG Partners.
+  Proudly is a consumer commerce company with no public developer API or SDK program; the only machine
+  surface is its Shopify Customer Account OpenID/OAuth well-known configuration.'
 url: https://raw.githubusercontent.com/api-evangelist/proudly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +14,30 @@ x-backed-by:
 - initialized-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.proudly.com/cdn/shop/files/proudly-meta.jpg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Baby Care
+- E-Commerce
+- Retail
+- Direct to Consumer
+- Skincare
+- Shopify
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/proudly-domain-security.yml
+- type: WellKnown
+  url: well-known/proudly-well-known.yml
 - type: Website
   url: https://proudly.com/
+- type: Blog
+  url: https://www.proudly.com/blogs/news
+- type: Support
+  url: https://www.proudly.com/pages/faqs
+- type: SignUp
+  url: https://www.proudly.com/account/register
+- type: TermsOfService
+  url: https://www.proudly.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.proudly.com/policies/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

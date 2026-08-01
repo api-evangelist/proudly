@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of https://proudly.com/.well-known/*
+host: proudly.com
+endpoints:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: proudly-openid-configuration.json
+  note: Shopify Customer Account API OpenID Connect configuration (issuer shopify.com/authentication/60400566515)
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  note: identical Shopify Customer Account OAuth authorization-server metadata
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
