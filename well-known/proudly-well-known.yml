@@ -16,3 +16,17 @@ endpoints:
   status: 404
 - path: /.well-known/ai-plugin.json
   status: 404
+hosts:
+- host: proudly.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: proudly-openid-configuration.json
+    note: Shopify Customer Account API OpenID Connect configuration (issuer shopify.com/authentication/60400566515)
+x-shape-fix:
+  converted: '2026-08-20'
+  from: endpoints
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent. Promoted ONLY the 2xx rows out of
+    the probe log; non-2xx probes are real negative results and were left in place, not converted into
+    documents.
